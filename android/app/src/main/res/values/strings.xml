@@ -1,0 +1,55 @@
+<resources>
+    <!-- Общие строки -->
+    <string name="app_name">InstaCapture</string>
+    <string name="accessibility_service_description">
+        InstaCapture отслеживает экран Instagram для автоматического сохранения данных аккаунтов (email, username, пароль) при регистрации. Данные шифруются и отправляются на ваш защищённый сервер.
+    </string>
+
+    <!-- Инструкции -->
+    <string name="instruction_step_1">1. Откройте Instagram</string>
+    <string name="instruction_step_2">2. Выйдите из текущего аккаунта (кнопка "Выйти")</string>
+    <string name="instruction_step_3">3. Начните регистрацию нового аккаунта</string>
+    <string name="instruction_warning">
+        Внимание: полная очистка данных Instagram без root невозможна. Рекомендуется вручную очистить данные в системных настройках для гарантии.
+    </string>
+
+    <!-- UI -->
+    <string name="status_active">Статус: АКТИВЕН (сервис запущен)</string>
+    <string name="status_inactive">Статус: НЕ АКТИВЕН — требуется включение в настройках</string>
+    <string name="btn_test_connection">Тестовое соединение с сервером</string>
+    <string name="btn_open_settings">Открыть настройки Accessibility</string>
+    <string name="btn_auto_logout">Автовыход из Instagram</string>
+    <string name="queue_empty">Очередь пуста</string>
+    <string name="queue_size_label">Записей в очереди: %1$d</string>
+    <string name="accounts_list_title">Захваченные аккаунты</string>
+
+    <!-- Диалоги -->
+    <string name="dialog_accessibility_title">Требуется Accessibility Service</string>
+    <string name="dialog_accessibility_message">Для работы InstaCapture необходимо включить сервис доступности. Это позволит приложению перехватывать данные из Instagram.</string>
+    <string name="btn_later">Позже</string>
+    <string name="btn_checking">Проверка…</string>
+    <string name="dialog_success">Успех</string>
+    <string name="dialog_error">Ошибка</string>
+    <string name="dialog_logout_title">Автоматический выход из Instagram</string>
+    <string name="dialog_logout_message">Приложение попытается нажать кнопки "Выйти" в Instagram автоматически.\n\nВАЖНО: Это НЕ гарантирует полную очистку данных (кэш, сохранённые пароли). Для 100% гарантии очистите данные Instagram вручную в системных настройках.</string>
+    <string name="btn_continue">Продолжить</string>
+
+    <!-- Инструкция -->
+    <string name="instruction_text">
+        Инструкция по использованию:\n\n
+        1. Убедитесь, что сервис InstaCapture включён в настройках Accessibility\n\n
+        2. Откройте Instagram\n\n
+        3. Выйдите из текущего аккаунта\n\n
+        4. Начните регистрацию нового аккаунта\n\n
+        5. InstaCapture автоматически захватит данные\n\n
+        Ограничения:\n
+        • Нет гарантированной очистки Instagram (только logout)\n
+        • Зависимость от layout Instagram\n
+        • Требуется Accessibility Service
+    </string>
+
+    <!-- Toast/Notifications -->
+    <string name="toast_service_required">Без Accessibility Service приложение не работает</string>
+    <string name="toast_instagram_opened">Откройте Instagram — автоматический logout начнётся</string>
+    <string name="toast_logout_success">Аккаунт выведен — можно регистрировать новый</string>
+</resources>
