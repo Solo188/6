@@ -51,7 +51,7 @@ jobs:
           ./gradlew assembleRelease --no-daemon --stacktrace
         env:
           # GitHub Actions автоматически кэширует Gradle
-          GRADLE_OPTS: -Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2
+          GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2"
 
       # ================== Upload Artifact ==================
       - name: Upload APK
